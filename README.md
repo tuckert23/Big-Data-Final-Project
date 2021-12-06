@@ -1,9 +1,9 @@
-# Big-Data-Final-Project
-Final Project
-- Computational Analysis of Big Data
-- DIS Copenhagen 
-- December 6, 2021
-- Lucian Leahu and Daniel Svendsen
+# Computational Analysis of Big Data
+## Final Project  
+Computational Analysis of Big Data  
+DIS Copenhagen  
+December 6, 2021  
+Lucian Leahu and Daniel Svendsen  
 
 ## Contributors:
 Chichi Wu, Mariana Zamorano, Nate Harris, and Taylor Tucker

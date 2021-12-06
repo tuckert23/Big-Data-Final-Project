@@ -9,7 +9,7 @@ Lucian Leahu and Daniel Svendsen
 Chichi Wu, Mariana Zamorano, Nate Harris, and Taylor Tucker
 
 ## Research Question:
-Is it possible to predict the winner of The Bachelorette using public opinion data from Twitter. 
+Is it possible to predict the winner of The Bachelorette using public opinion data from Twitter? 
 
 ## Link to Medium Blog Post
 

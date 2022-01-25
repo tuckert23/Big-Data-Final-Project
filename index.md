@@ -1,37 +1,45 @@
-## Welcome to GitHub Pages
+# Computational Analysis of Big Data
+## Final Project  
+Computational Analysis of Big Data  
+DIS Copenhagen  
+December 6, 2021  
+Lucian Leahu and Daniel Svendsen  
 
-You can use the [editor on GitHub](https://github.com/tuckert23/Big-Data-Final-Project/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Contributors:
+Chichi Wu, Mariana Zamorano, Nate Harris, and Taylor Tucker
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Research Question:
+Is it possible to predict the winner of The Bachelorette using public opinion data from Twitter? 
 
-### Markdown
+## Link to Medium Blog Post
+https://medium.com/@marianazc/the-bachelorette-does-twitter-have-what-it-takes-to-predict-a-winner-b16af96d4673
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Description of Notebooks
+- __Wikipedia Master Code.ipynb__  
+This notebook scrapes, processes, combines, and saves data from tables across various Wikipedia sites, primarily through the Wikipedia API, which we accessed using Beautiful Soup. 
 
-```markdown
-Syntax highlighted code block
+- __tweet_scraper.py__  
+This Python script scrapes tweets from Twitter using a cross-referenced list of dates from the Wikipedia Master Code notebook. Unfortunately, due to security concerns, this script is not functional. However, the results of the scrapping are saved in the .zip file.
 
-# Header 1
-## Header 2
-### Header 3
+- __Sentiment Analysis.ipynb__  
+This notebook takes the results of tweet_scraper.py, along with the Wikipedia code, and performs sentiment analysis throught the NLTK package. This data is stored in the file twitter_data_not_manually_cleaned.csv. We had to manually go through a fix a few artifacts, and the full clean twitter data can be found in the tweets_clean.csv file. Said artifacts are that some of the seasons were not copied over, which takes only 45 seconds to fix manually. 
 
-- Bulleted
-- List
+- __Model.ipynb__  
+This notebook is where we pull together everything from both the Twitter and Wikipedia .csv files. The code should work as-is with the provided datasets (i.e. there is no need to run any of the previous three files in order to perform some of the analysis). The model first takes the data and encodes it so that a simple neural network can make use of it. Then, the notebook builds and executes the simple neural network on the data, season-by-season, and its results can be seen in the last code cell.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tuckert23/Big-Data-Final-Project/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Package requirements
+- numpy
+- pandas
+- matplotlib.pyplot
+- nltk.sentiment.vader.SentimentIntensityAnalyzer
+- datetime.datetime
+- datetime.timedelta
+- re
+- tweepy
+- requests
+- bs4.BeautifulSoup
+- collections.defaultdict
+- os
+- tensorflow
+- keras
+- time

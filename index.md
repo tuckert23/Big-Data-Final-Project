@@ -1,4 +1,4 @@
-# Computational Analysis of Big Data
+# [Home](https://github.com/tuckert23/tuckert23.github.io)
 ## Final Project  
 Computational Analysis of Big Data  
 DIS Copenhagen  
@@ -11,8 +11,7 @@ Chichi Wu, Mariana Zamorano, Nate Harris, and Taylor Tucker
 ## Research Question:
 Is it possible to predict the winner of The Bachelorette using public opinion data from Twitter? 
 
-## Link to Medium Blog Post
-https://medium.com/@marianazc/the-bachelorette-does-twitter-have-what-it-takes-to-predict-a-winner-b16af96d4673
+## [Link to Medium Blog Post](https://medium.com/@marianazc/the-bachelorette-does-twitter-have-what-it-takes-to-predict-a-winner-b16af96d4673)
 
 ## Description of Notebooks
 - __Wikipedia Master Code.ipynb__  
